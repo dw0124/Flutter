@@ -49,7 +49,7 @@ struct MyWidgetEntryView : View {
             Text("Time:")
             Text(entry.date, style: .time)
 
-            Text("Favorite Emoji:")
+            Text("Favorite 이모지!:")
             Text(entry.configuration.favoriteEmoji)
         }
     }

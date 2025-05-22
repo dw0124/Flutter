@@ -9,11 +9,6 @@ import Foundation
 
 class SomethingTodo {
     static func something(result: FlutterResult, developerName: String) {
-        let x: int = 1
-        x = nil
-        
-        print(x)
-        
         result(developerName)
     }
 }
