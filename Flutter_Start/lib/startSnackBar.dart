@@ -39,6 +39,9 @@ class StartSnackBarPage extends StatelessWidget {
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => ThirdPage()));
                           }
+
+
+
                       ),
                   )
                 );
