@@ -1,37 +1,48 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
+# Dart & Flutter 관련
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
-/build/
+build/
+generated_plugin_registrant.dart
 
-# Web related
-lib/generated_plugin_registrant.dart
+# macOS 관련
+.DS_Store
 
-# Exceptions to above rules.
-!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+# Android 관련
+/android/local.properties
+
+# Xcode 관련
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.lock
+DerivedData/
+*.pbxuser
+
+# VS Code
+.vscode/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# 바이너리 파일
+*.class
+*.swp
+*.swo
+*.pyc
+
+# 기타
+.history
+.svn/
+.atom/
+.buildlog/
+
+# 예외 처리 (flutter_tools 테스트용)
+/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
