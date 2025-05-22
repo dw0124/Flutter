@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:start_flutter/BBANTO.dart';
+import 'package:start_flutter/method_channel/battery_level_page.dart';
 import 'package:start_flutter/startAppbar.dart';
 import 'package:start_flutter/startButton.dart';
 import 'package:start_flutter/startNavigator.dart';
@@ -8,7 +9,7 @@ import 'package:start_flutter/startToastMessage.dart';
 import 'package:start_flutter/Navigator/myNavigator.dart';
 import 'package:start_flutter/startStateful.dart';
 
-// void main() => runApp(MyApp());
+void main() => runApp(MyApp());
 // void main() => runApp(BBantoApp());
 // void main() => runApp(StartAppBar());
 // void main() => runApp(StartSnackBar());
@@ -16,7 +17,7 @@ import 'package:start_flutter/startStateful.dart';
 // void main() => runApp(StartNavigator());
 // void main() => runApp(MyNavigator());
 // void main() => runApp(StartButton());
-void main() => runApp(Startstateful());
+// void main() => runApp(Startstateful());
 
 class MyApp extends StatelessWidget {
 
@@ -24,13 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "My App",
-        theme: ThemeData(
-            appBarTheme: AppBarTheme(
-              backgroundColor: Colors.blue, // AppBar의 배경 색상
-              foregroundColor: Colors.white, // AppBar의 글씨 및 아이콘 색상
-            )
-        ),
-      home: MyHomePage(),
+      home: BatteryLevelPage(),
     );
   }
 }
